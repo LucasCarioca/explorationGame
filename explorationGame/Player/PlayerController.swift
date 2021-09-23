@@ -42,14 +42,28 @@ class PlayerController {
     }
     
     func attack() {
+        node.xScale = 4
+        node.yScale = 4
         if directionState == .down {
-            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackDown"))
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackDown"), completion: {
+                self.node.xScale = 2
+                self.node.yScale = 2
+            })
         } else if directionState == .up {
-            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackUp"))
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackUp"), completion: {
+                self.node.xScale = 2
+                self.node.yScale = 2
+            })
         } else if directionState == .left {
-            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackLeft"))
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackLeft"), completion: {
+                self.node.xScale = 2
+                self.node.yScale = 2
+            })
         } else if directionState == .right {
-            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackRight"))
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackRight"), completion: {
+                self.node.xScale = 2
+                self.node.yScale = 2
+            })
         }
     }
     
