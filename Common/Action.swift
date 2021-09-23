@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum Movement {
-    case idle, walking
+enum Action {
+    case idle, walking, attacking
 }

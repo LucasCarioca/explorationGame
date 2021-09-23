@@ -13,7 +13,7 @@ class PlayerController {
     var scene: SKScene
     var node: SKSpriteNode
     var directionState: Direction = .down
-    var movementState: Movement = .idle
+    var actionState: Action = .idle
     
     init(scene: SKScene) {
         self.scene = scene
@@ -30,32 +30,41 @@ class PlayerController {
     }
     
     func update() {
-        print("\(movementState) - \(directionState)")
+        
     }
     
-    func setAnimation(direction: Direction, movement: Movement){
-        if direction != directionState || movement != movementState {
+    func setAnimation(direction: Direction, action: Action){
+        if direction != directionState || action != actionState {
             self.directionState = direction
-            self.movementState = movement
+            self.actionState = action
             animate()
         }
     }
     
-    func setMovement(to movement: Movement){
+    func attack() {
+        if directionState == .down {
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackDown"))
+        } else if directionState == .up {
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackUp"))
+        } else if directionState == .left {
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackLeft"))
+        } else if directionState == .right {
+            node.run(SKAction.createAnimationFromAtlas(named: "playerAttackRight"))
+        }
     }
     
     func animate() {
-        if movementState == .walking {
-//            if directionState == .left {
-//                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingLeft")))
-//            } else if directionState == .right {
-//                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingRight")))
-//            } else if directionState == .up {
-//                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingUp")))
-//            } else if directionState == .down {
-//                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingDown")))
-//            }
-        } else if movementState == .idle {
+        if actionState == .walking {
+            if directionState == .left {
+                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingLeft")))
+            } else if directionState == .right {
+                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingRight")))
+            } else if directionState == .up {
+                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingUp")))
+            } else if directionState == .down {
+                node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerWalkingDown")))
+            }
+        } else if actionState == .idle {
             if directionState == .left {
                 node.run(SKAction.repeatForever(SKAction.createAnimationFromAtlas(named: "playerIdleLeft")))
             } else if directionState == .right {
@@ -67,4 +76,5 @@ class PlayerController {
             }
         }
     }
+
 }

@@ -30,19 +30,24 @@ class GameScene: SKScene {
             let location = touch.location(in: self)
             
             if atPoint(location).name == "right" {
-                player?.setAnimation(direction: .right, movement: .walking)
+                player?.setAnimation(direction: .right, action: .walking)
             }
             
             if atPoint(location).name == "left" {
-                player?.setAnimation(direction: .left, movement: .walking)
+                player?.setAnimation(direction: .left, action: .walking)
             }
             
             if atPoint(location).name == "up" {
-                player?.setAnimation(direction: .up, movement: .walking)
+                player?.setAnimation(direction: .up, action: .walking)
             }
             
             if atPoint(location).name == "down" {
-                player?.setAnimation(direction: .down, movement: .walking)            }
+                player?.setAnimation(direction: .down, action: .walking)
+            }
+            
+            if atPoint(location).name == "attack" {
+                player?.attack()
+            }
         }
     }
     
@@ -53,19 +58,19 @@ class GameScene: SKScene {
             let location = touch.location(in: self)
             
             if atPoint(location).name == "right" {
-                player?.setAnimation(direction: .right, movement: .idle)
+                player?.setAnimation(direction: .right, action: .idle)
             }
             
             if atPoint(location).name == "left" {
-                player?.setAnimation(direction: .left, movement: .idle)
+                player?.setAnimation(direction: .left, action: .idle)
             }
             
             if atPoint(location).name == "up" {
-                player?.setAnimation(direction: .up, movement: .idle)
+                player?.setAnimation(direction: .up, action: .idle)
             }
             
             if atPoint(location).name == "down" {
-                player?.setAnimation(direction: .down, movement: .idle)
+                player?.setAnimation(direction: .down, action: .idle)
             }
         
         }

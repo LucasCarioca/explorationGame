@@ -20,8 +20,16 @@
 		DF2A4DD726FBCEA8006D3FB6 /* SKActionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */; };
 		DF2A4DD926FBCF0C006D3FB6 /* SKTextureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */; };
 		DF2A4DDB26FBCFB4006D3FB6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */; };
-		DF2A4DDD26FBCFDB006D3FB6 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */; };
+		DF2A4DDD26FBCFDB006D3FB6 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDC26FBCFDB006D3FB6 /* Action.swift */; };
 		DF2A4DE026FBD14B006D3FB6 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDF26FBD14B006D3FB6 /* PlayerController.swift */; };
+		DF2A4E0726FD0568006D3FB6 /* playerWalkingUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0326FD0568006D3FB6 /* playerWalkingUp.atlas */; };
+		DF2A4E0826FD0568006D3FB6 /* playerWalkingRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0426FD0568006D3FB6 /* playerWalkingRight.atlas */; };
+		DF2A4E0926FD0568006D3FB6 /* playerWalkingDown.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0526FD0568006D3FB6 /* playerWalkingDown.atlas */; };
+		DF2A4E0A26FD0568006D3FB6 /* playerWalkingLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0626FD0568006D3FB6 /* playerWalkingLeft.atlas */; };
+		DF2A4E0F26FD20DC006D3FB6 /* playerAttackDown.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0B26FD20DB006D3FB6 /* playerAttackDown.atlas */; };
+		DF2A4E1026FD20DC006D3FB6 /* playerAttackUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0C26FD20DC006D3FB6 /* playerAttackUp.atlas */; };
+		DF2A4E1126FD20DC006D3FB6 /* playerAttackRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0D26FD20DC006D3FB6 /* playerAttackRight.atlas */; };
+		DF2A4E1226FD20DC006D3FB6 /* playerAttackLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4E0E26FD20DC006D3FB6 /* playerAttackLeft.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +48,16 @@
 		DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActionExtensions.swift; sourceTree = "<group>"; };
 		DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTextureExtensions.swift; sourceTree = "<group>"; };
 		DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
-		DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		DF2A4DDC26FBCFDB006D3FB6 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		DF2A4DDF26FBD14B006D3FB6 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		DF2A4E0326FD0568006D3FB6 /* playerWalkingUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerWalkingUp.atlas; sourceTree = "<group>"; };
+		DF2A4E0426FD0568006D3FB6 /* playerWalkingRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerWalkingRight.atlas; sourceTree = "<group>"; };
+		DF2A4E0526FD0568006D3FB6 /* playerWalkingDown.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerWalkingDown.atlas; sourceTree = "<group>"; };
+		DF2A4E0626FD0568006D3FB6 /* playerWalkingLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerWalkingLeft.atlas; sourceTree = "<group>"; };
+		DF2A4E0B26FD20DB006D3FB6 /* playerAttackDown.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerAttackDown.atlas; sourceTree = "<group>"; };
+		DF2A4E0C26FD20DC006D3FB6 /* playerAttackUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerAttackUp.atlas; sourceTree = "<group>"; };
+		DF2A4E0D26FD20DC006D3FB6 /* playerAttackRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerAttackRight.atlas; sourceTree = "<group>"; };
+		DF2A4E0E26FD20DC006D3FB6 /* playerAttackLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerAttackLeft.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,14 @@
 		DF2A4DC426FBAF10006D3FB6 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				DF2A4E0B26FD20DB006D3FB6 /* playerAttackDown.atlas */,
+				DF2A4E0E26FD20DC006D3FB6 /* playerAttackLeft.atlas */,
+				DF2A4E0D26FD20DC006D3FB6 /* playerAttackRight.atlas */,
+				DF2A4E0C26FD20DC006D3FB6 /* playerAttackUp.atlas */,
+				DF2A4E0526FD0568006D3FB6 /* playerWalkingDown.atlas */,
+				DF2A4E0626FD0568006D3FB6 /* playerWalkingLeft.atlas */,
+				DF2A4E0426FD0568006D3FB6 /* playerWalkingRight.atlas */,
+				DF2A4E0326FD0568006D3FB6 /* playerWalkingUp.atlas */,
 				DF2A4DCE26FBB682006D3FB6 /* playerIdleDown.atlas */,
 				DF2A4DCD26FBB682006D3FB6 /* playerIdleLeft.atlas */,
 				DF2A4DCF26FBB682006D3FB6 /* playerIdleRight.atlas */,
@@ -112,7 +136,7 @@
 				DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */,
 				DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */,
 				DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */,
-				DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */,
+				DF2A4DDC26FBCFDB006D3FB6 /* Action.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -194,10 +218,18 @@
 				DF2A4DD326FBB682006D3FB6 /* playerIdleRight.atlas in Resources */,
 				DF2A4DBA26FB9277006D3FB6 /* Main.storyboard in Resources */,
 				DF2A4DB126FB9277006D3FB6 /* GameScene.sks in Resources */,
+				DF2A4E0726FD0568006D3FB6 /* playerWalkingUp.atlas in Resources */,
 				DF2A4DD126FBB682006D3FB6 /* playerIdleLeft.atlas in Resources */,
+				DF2A4E0826FD0568006D3FB6 /* playerWalkingRight.atlas in Resources */,
+				DF2A4E0F26FD20DC006D3FB6 /* playerAttackDown.atlas in Resources */,
+				DF2A4E1226FD20DC006D3FB6 /* playerAttackLeft.atlas in Resources */,
+				DF2A4E0A26FD0568006D3FB6 /* playerWalkingLeft.atlas in Resources */,
 				DF2A4DBC26FB927A006D3FB6 /* Assets.xcassets in Resources */,
 				DF2A4DD426FBB682006D3FB6 /* playerIdleUp.atlas in Resources */,
+				DF2A4E0926FD0568006D3FB6 /* playerWalkingDown.atlas in Resources */,
+				DF2A4E1026FD20DC006D3FB6 /* playerAttackUp.atlas in Resources */,
 				DF2A4DD226FBB682006D3FB6 /* playerIdleDown.atlas in Resources */,
+				DF2A4E1126FD20DC006D3FB6 /* playerAttackRight.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +244,7 @@
 				DF2A4DB726FB9277006D3FB6 /* GameViewController.swift in Sources */,
 				DF2A4DE026FBD14B006D3FB6 /* PlayerController.swift in Sources */,
 				DF2A4DAF26FB9277006D3FB6 /* AppDelegate.swift in Sources */,
-				DF2A4DDD26FBCFDB006D3FB6 /* Movement.swift in Sources */,
+				DF2A4DDD26FBCFDB006D3FB6 /* Action.swift in Sources */,
 				DF2A4DD926FBCF0C006D3FB6 /* SKTextureExtensions.swift in Sources */,
 				DF2A4DD726FBCEA8006D3FB6 /* SKActionExtensions.swift in Sources */,
 				DF2A4DDB26FBCFB4006D3FB6 /* Direction.swift in Sources */,
