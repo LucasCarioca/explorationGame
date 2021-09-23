@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		DF2A4DAF26FB9277006D3FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DAE26FB9277006D3FB6 /* AppDelegate.swift */; };
 		DF2A4DB126FB9277006D3FB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DB026FB9277006D3FB6 /* GameScene.sks */; };
-		DF2A4DB326FB9277006D3FB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DB226FB9277006D3FB6 /* Actions.sks */; };
 		DF2A4DB526FB9277006D3FB6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DB426FB9277006D3FB6 /* GameScene.swift */; };
 		DF2A4DB726FB9277006D3FB6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DB626FB9277006D3FB6 /* GameViewController.swift */; };
 		DF2A4DBA26FB9277006D3FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DB826FB9277006D3FB6 /* Main.storyboard */; };
 		DF2A4DBC26FB927A006D3FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DBB26FB927A006D3FB6 /* Assets.xcassets */; };
+		DF2A4DD126FBB682006D3FB6 /* playerIdleLeft.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DCD26FBB682006D3FB6 /* playerIdleLeft.atlas */; };
+		DF2A4DD226FBB682006D3FB6 /* playerIdleDown.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DCE26FBB682006D3FB6 /* playerIdleDown.atlas */; };
+		DF2A4DD326FBB682006D3FB6 /* playerIdleRight.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DCF26FBB682006D3FB6 /* playerIdleRight.atlas */; };
+		DF2A4DD426FBB682006D3FB6 /* playerIdleUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DF2A4DD026FBB682006D3FB6 /* playerIdleUp.atlas */; };
+		DF2A4DD726FBCEA8006D3FB6 /* SKActionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */; };
+		DF2A4DD926FBCF0C006D3FB6 /* SKTextureExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */; };
+		DF2A4DDB26FBCFB4006D3FB6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */; };
+		DF2A4DDD26FBCFDB006D3FB6 /* Movement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */; };
+		DF2A4DE026FBD14B006D3FB6 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2A4DDF26FBD14B006D3FB6 /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DF2A4DAB26FB9277006D3FB6 /* exporationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exporationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2A4DAB26FB9277006D3FB6 /* explorationGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = explorationGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2A4DAE26FB9277006D3FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF2A4DB026FB9277006D3FB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DF2A4DB226FB9277006D3FB6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		DF2A4DB426FB9277006D3FB6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DF2A4DB626FB9277006D3FB6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DF2A4DB926FB9277006D3FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF2A4DBB26FB927A006D3FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF2A4DBD26FB927A006D3FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2A4DCD26FBB682006D3FB6 /* playerIdleLeft.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerIdleLeft.atlas; sourceTree = "<group>"; };
+		DF2A4DCE26FBB682006D3FB6 /* playerIdleDown.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerIdleDown.atlas; sourceTree = "<group>"; };
+		DF2A4DCF26FBB682006D3FB6 /* playerIdleRight.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerIdleRight.atlas; sourceTree = "<group>"; };
+		DF2A4DD026FBB682006D3FB6 /* playerIdleUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = playerIdleUp.atlas; sourceTree = "<group>"; };
+		DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKActionExtensions.swift; sourceTree = "<group>"; };
+		DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKTextureExtensions.swift; sourceTree = "<group>"; };
+		DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movement.swift; sourceTree = "<group>"; };
+		DF2A4DDF26FBD14B006D3FB6 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +58,9 @@
 		DF2A4DA226FB9277006D3FB6 = {
 			isa = PBXGroup;
 			children = (
-				DF2A4DAD26FB9277006D3FB6 /* exporationGame */,
+				DF2A4DD526FBCE70006D3FB6 /* Common */,
+				DF2A4DC326FBAF06006D3FB6 /* Assets */,
+				DF2A4DAD26FB9277006D3FB6 /* explorationGame */,
 				DF2A4DAC26FB9277006D3FB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +68,78 @@
 		DF2A4DAC26FB9277006D3FB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF2A4DAB26FB9277006D3FB6 /* exporationGame.app */,
+				DF2A4DAB26FB9277006D3FB6 /* explorationGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DF2A4DAD26FB9277006D3FB6 /* exporationGame */ = {
+		DF2A4DAD26FB9277006D3FB6 /* explorationGame */ = {
 			isa = PBXGroup;
 			children = (
+				DF2A4E0226FCC795006D3FB6 /* Scenes */,
+				DF2A4DDE26FBD125006D3FB6 /* Player */,
 				DF2A4DAE26FB9277006D3FB6 /* AppDelegate.swift */,
-				DF2A4DB026FB9277006D3FB6 /* GameScene.sks */,
-				DF2A4DB226FB9277006D3FB6 /* Actions.sks */,
-				DF2A4DB426FB9277006D3FB6 /* GameScene.swift */,
 				DF2A4DB626FB9277006D3FB6 /* GameViewController.swift */,
 				DF2A4DB826FB9277006D3FB6 /* Main.storyboard */,
 				DF2A4DBB26FB927A006D3FB6 /* Assets.xcassets */,
 				DF2A4DBD26FB927A006D3FB6 /* Info.plist */,
 			);
-			path = exporationGame;
+			path = explorationGame;
+			sourceTree = "<group>";
+		};
+		DF2A4DC326FBAF06006D3FB6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A4DC426FBAF10006D3FB6 /* Textures */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DF2A4DC426FBAF10006D3FB6 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A4DCE26FBB682006D3FB6 /* playerIdleDown.atlas */,
+				DF2A4DCD26FBB682006D3FB6 /* playerIdleLeft.atlas */,
+				DF2A4DCF26FBB682006D3FB6 /* playerIdleRight.atlas */,
+				DF2A4DD026FBB682006D3FB6 /* playerIdleUp.atlas */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		DF2A4DD526FBCE70006D3FB6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A4DD626FBCEA8006D3FB6 /* SKActionExtensions.swift */,
+				DF2A4DD826FBCF0C006D3FB6 /* SKTextureExtensions.swift */,
+				DF2A4DDA26FBCFB4006D3FB6 /* Direction.swift */,
+				DF2A4DDC26FBCFDB006D3FB6 /* Movement.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DF2A4DDE26FBD125006D3FB6 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A4DDF26FBD14B006D3FB6 /* PlayerController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		DF2A4E0226FCC795006D3FB6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DF2A4DB426FB9277006D3FB6 /* GameScene.swift */,
+				DF2A4DB026FB9277006D3FB6 /* GameScene.sks */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DF2A4DAA26FB9277006D3FB6 /* exporationGame */ = {
+		DF2A4DAA26FB9277006D3FB6 /* explorationGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DF2A4DC026FB927A006D3FB6 /* Build configuration list for PBXNativeTarget "exporationGame" */;
+			buildConfigurationList = DF2A4DC026FB927A006D3FB6 /* Build configuration list for PBXNativeTarget "explorationGame" */;
 			buildPhases = (
 				DF2A4DA726FB9277006D3FB6 /* Sources */,
 				DF2A4DA826FB9277006D3FB6 /* Frameworks */,
@@ -85,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = exporationGame;
+			name = explorationGame;
 			productName = exporationGame;
-			productReference = DF2A4DAB26FB9277006D3FB6 /* exporationGame.app */;
+			productReference = DF2A4DAB26FB9277006D3FB6 /* explorationGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -104,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DF2A4DA626FB9277006D3FB6 /* Build configuration list for PBXProject "exporationGame" */;
+			buildConfigurationList = DF2A4DA626FB9277006D3FB6 /* Build configuration list for PBXProject "explorationGame" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -117,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DF2A4DAA26FB9277006D3FB6 /* exporationGame */,
+				DF2A4DAA26FB9277006D3FB6 /* explorationGame */,
 			);
 		};
 /* End PBXProject section */
@@ -127,10 +191,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2A4DD326FBB682006D3FB6 /* playerIdleRight.atlas in Resources */,
 				DF2A4DBA26FB9277006D3FB6 /* Main.storyboard in Resources */,
 				DF2A4DB126FB9277006D3FB6 /* GameScene.sks in Resources */,
+				DF2A4DD126FBB682006D3FB6 /* playerIdleLeft.atlas in Resources */,
 				DF2A4DBC26FB927A006D3FB6 /* Assets.xcassets in Resources */,
-				DF2A4DB326FB9277006D3FB6 /* Actions.sks in Resources */,
+				DF2A4DD426FBB682006D3FB6 /* playerIdleUp.atlas in Resources */,
+				DF2A4DD226FBB682006D3FB6 /* playerIdleDown.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +210,12 @@
 			files = (
 				DF2A4DB526FB9277006D3FB6 /* GameScene.swift in Sources */,
 				DF2A4DB726FB9277006D3FB6 /* GameViewController.swift in Sources */,
+				DF2A4DE026FBD14B006D3FB6 /* PlayerController.swift in Sources */,
 				DF2A4DAF26FB9277006D3FB6 /* AppDelegate.swift in Sources */,
+				DF2A4DDD26FBCFDB006D3FB6 /* Movement.swift in Sources */,
+				DF2A4DD926FBCF0C006D3FB6 /* SKTextureExtensions.swift in Sources */,
+				DF2A4DD726FBCEA8006D3FB6 /* SKActionExtensions.swift in Sources */,
+				DF2A4DDB26FBCFB4006D3FB6 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +356,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y259ZT3SQK;
-				INFOPLIST_FILE = exporationGame/Info.plist;
+				INFOPLIST_FILE = explorationGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.exporationGame;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.explorationGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,12 +375,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y259ZT3SQK;
-				INFOPLIST_FILE = exporationGame/Info.plist;
+				INFOPLIST_FILE = explorationGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.exporationGame;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.explorationGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,7 +390,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DF2A4DA626FB9277006D3FB6 /* Build configuration list for PBXProject "exporationGame" */ = {
+		DF2A4DA626FB9277006D3FB6 /* Build configuration list for PBXProject "explorationGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF2A4DBE26FB927A006D3FB6 /* Debug */,
@@ -327,7 +399,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DF2A4DC026FB927A006D3FB6 /* Build configuration list for PBXNativeTarget "exporationGame" */ = {
+		DF2A4DC026FB927A006D3FB6 /* Build configuration list for PBXNativeTarget "explorationGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DF2A4DC126FB927A006D3FB6 /* Debug */,
